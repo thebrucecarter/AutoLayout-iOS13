@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,27 +20,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-pf-Q9X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-9M-PPJ">
-                                <rect key="frame" x="112" y="418.5" width="190" height="59"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to Code By Making Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9F1-rh-WIA">
-                                <rect key="frame" x="89.5" y="507.5" width="235" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pTn-GH-gNj">
+                                <rect key="frame" x="89.5" y="393.5" width="235" height="109.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-9M-PPJ">
+                                        <rect key="frame" x="22.5" y="0.0" width="190" height="59"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to Code By Making Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9F1-rh-WIA">
+                                        <rect key="frame" x="0.0" y="89" width="235" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9F1-rh-WIA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HC3-RD-WBJ"/>
                             <constraint firstAttribute="bottom" secondItem="fEb-pf-Q9X" secondAttribute="bottom" id="Jrw-LW-TRn"/>
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="M2b-5e-Nzu"/>
-                            <constraint firstItem="9F1-rh-WIA" firstAttribute="top" secondItem="Iff-9M-PPJ" secondAttribute="bottom" constant="30" id="WD8-pw-3F3"/>
-                            <constraint firstItem="Iff-9M-PPJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gO5-Kw-NPs"/>
-                            <constraint firstItem="Iff-9M-PPJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jSE-Ms-7xp"/>
+                            <constraint firstItem="pTn-GH-gNj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZE6-kZ-Hrw"/>
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jyj-50-ER6"/>
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lIZ-Os-457"/>
+                            <constraint firstItem="pTn-GH-gNj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nxF-xF-EFN"/>
                         </constraints>
                     </view>
                 </viewController>
